@@ -1,0 +1,41 @@
+#login {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2),  
+                0 1px 1px rgba(0, 0, 0, .2),
+                0 3px 0 #fff,
+                0 4px 0 rgba(0, 0, 0, .2),
+                0 6px 0 #fff,  
+                0 7px 0 rgba(0, 0, 0, .2);
+    position: absolute;
+    z-index: 0;
+}
+h1 {
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .7), 0px 2px 0 rgba(0, 0, 0, .5);
+    text-transform: uppercase;
+    text-align: center;
+    color: #666;
+    margin: 30 0 30px 0;
+    letter-spacing: 4px;
+    font: normal 26px/1 Verdana, Helvetica;
+    position: relative;
+}
+h1:after, 
+h1:before {
+    background-color: rgb(37, 59, 119);
+    content: "";
+    height: 1px;
+    position: absolute;
+    top: 15px;
+    width: 120px;   
+}
+
+h1:after {      
+    right: 0;
+}
+
+h1:before {
+    background-image: linear-gradient(right, #777, #fff);
+    left: 0;
+}
+fieldset{
+    border: none;
+}
