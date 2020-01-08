@@ -14,14 +14,14 @@
     <div>
         <h1>Bienvenue sur SkoolMeat<h1>
     <div>
-    <div class="presentation">
-        <div>
-            <p>SkoolMeat est une application d'aide et de recontre par du soutient scolaire</p>
+    <div>
+        <div class="presentation1">
+            <h6>SkoolMeat est une application d'aide et de recontre par du soutient scolaire<h6>
         </div>
         <div>
             <img class="logo" src="logo.PNG">
-        </div>
-            <p>Le but est de par vos centres d'intérêt et vos compétences scolaire de discuter et vous aidez</p>
+        </div class="presentation2">
+            <h6>Le but est de par vos centres d'intérêt et vos compétences scolaire de discuter et vous aidez<h6>
         <div>
 
         </div>
