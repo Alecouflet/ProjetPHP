@@ -4,8 +4,8 @@
         <link rel="stylesheet" href="styleseconnecter.css" />
         <nav>
 	        <a href="index.php">Accueil</a>
-            <a href="seconnecter.php">About</a>
-            
+            <a href="seconnecter.php">Connexion</a>
+            <a href="signin.php">Inscription</a>
 	        <div class="animation start-home"></div>
         </nav>
     </head>
