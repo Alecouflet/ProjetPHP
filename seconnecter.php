@@ -43,11 +43,10 @@ session_start(); ?>
     $userinfo = $requser->fetch();
     if ($userexist == 1) {
         $_SESSION['mail'] = $userinfo['mail'];
-        echo "Connecté en tant que ".$userinfo['prenom']." ".$userinfo['nom'];
+        //echo "Connecté en tant que ".$userinfo['prenom']." ".$userinfo['nom'];
         ?> 
-        <form methode="post" action="profilperso.php">
-            <input classe="button" type="submit" name="valider" value="Editer mon profil"/>
-        </form>
+        <h1>Connexion en cours</h1>
+        <meta http-equiv="refresh" content="2;URL=profilperso.php">
     <?php
     }
     else{
