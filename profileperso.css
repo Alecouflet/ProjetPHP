@@ -1,11 +1,13 @@
 body{
-	font-size: 10px;
 	font-family: sans-serif;
     background: #2c3e50;
+    color: white;
+    font-size: 20px;
 }
 .logo{
-    width: 50%;
-    height: 50%;
+    width: 15%;
+    height: 15%;
+    float: right;
 }
 .lapro{
     width: 20%;
@@ -53,6 +55,9 @@ a:nth-child(2) {
 a:nth-child(3) {
 	width: 100px;
 }
+a:nth-child(4) {
+	width: 140px;
+}
 nav .start-home, a:nth-child(1):hover~.animation {
 	width: 100px;
 	left: 0;
@@ -65,24 +70,69 @@ nav .start-about, a:nth-child(2):hover~.animation {
 }
 nav .start-about, a:nth-child(3):hover~.animation {
 	width: 120px;
-	left: 205px;
+	left: 200px;
 	background-color: #16bb24;
+}
+nav .start-about, a:nth-child(4):hover~.animation {
+	width: 145px;
+	left: 315px;
+	background-color: #8716bb;
 }
 h1 {
 	text-align: center;
-	margin: 40px 0 40px;
+	font-size: 40px;
+	color: #ecf0f1;
+	text-shadow: 2px 2px 4px #000000;
+	font-family: 'Cherry Swash', cursive;
+}
+h2{
 	text-align: center;
 	font-size: 30px;
 	color: #ffffff;
 	text-shadow: 2px 2px 4px #000000;
 	font-family: 'Cherry Swash', cursive;
 }
-h2{
+.Button {
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+	background:linear-gradient(to bottom, #757575 5%, #27262e 100%);
+	background-color:#c9eac2;
+	border-radius:15px;
+	border:2px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:12px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.Button:hover {
+	background:linear-gradient(to bottom, #000000 5%, #000000 100%);
+	background-color:#ccc2a6;
+}
+.Button:active {
+	position:relative;
+	top:1px;
+}
+p{
+    color: white;
+    font-size: 20px;
+}
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 300px;
+	margin: auto;
 	text-align: center;
-	margin: 40px 0 40px;
-	text-align: center;
+	border: solid 5px black;
+
+}  
+.title{
+	color: rgb(255, 255, 255);
+	font-size: 30px;
+}
+.title2{
+	color: white;
 	font-size: 20px;
-	color: #999999;
-	text-shadow: 2px 2px 4px #000000;
-	font-family: 'Cherry Swash', cursive;
 }

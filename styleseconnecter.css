@@ -149,22 +149,7 @@ input{
     margin:1%;
     padding-left: 2%;
 }
-.button1{
-    display: inline-block;
-    padding: 2% 4%;
-    font-family: fantasy;
-    font-size: 20px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: rgb(80, 74, 158);
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-}
-.button2{
+.button{
     display: inline-block;
     padding: 2% 4%;
     font-family: fantasy;

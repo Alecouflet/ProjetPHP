@@ -90,7 +90,7 @@ fieldset{
     margin-right: 30%;
 }
 #login {
-    margin-top: 10%;
+    margin-top: 5%;
     background-color: white;
     width: 75%;
     height: 70%;
@@ -136,9 +136,9 @@ h3:before {
     margin-left: 0px;
 }
 input{
-    height: 8%;
+    height: 6%;
     width: 50%;
-    margin:1%;
+    margin: 1%;
     padding-left: 2%;
 }
 .button1{
@@ -173,4 +173,7 @@ input{
 }
 h2{
     font-size: 15px;
+}
+select{
+    float: left;
 }
