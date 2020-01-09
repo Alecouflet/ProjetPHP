@@ -4,3 +4,6 @@
         $sign = $bdd->prepare("INSERT INTO `user` (`nom`, `prenom`, `age`, `mail`, `password`) VALUES(?, ?, ?, ?, ?)");
         $sign->execute(array($_POST['nom'], $_POST['prenom'],$_POST['age'],$_POST['email']."@la-providence.net",$_POST['password']));
         ?>
+        <form method="post" action="seconnecter.php">
+            <input type="submit" value="Se connecter">
+        </form>

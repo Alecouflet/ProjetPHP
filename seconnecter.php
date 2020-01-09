@@ -34,6 +34,7 @@ session_start(); ?>
 <?php
     $bdd = new PDO('mysql:host=192.168.65.194; dbname=skoolmeat; charset=utf8', 'root', 'root');
 
+    if(isset($_POST['email']) && isset($_POST['password'])){
     $mailconnect = $_POST['email'];
     $mdpconnect = $_POST['password'];
     $requser = $bdd->prepare("SELECT * FROM user WHERE mail = ? AND password = ?");
@@ -52,7 +53,7 @@ session_start(); ?>
     else{
         echo "E-mail ou mot de passe incorrect";
     }
-    
+}
     ?>
 </body>
 
