@@ -26,7 +26,7 @@
     <h2> Meat other pupils : </h2><br> 
     <?php
     
-    if($_SESSION['idstranger'] == 0 && $userinfo['id_user'] != 1){
+    if(isset($_SESSION['idstranger']) && $_SESSION['idstranger'] == 0 && $userinfo['id_user'] != 1){
         $_SESSION['idstranger'] = 1;
     }
     else if($_SESSION['idstranger'] == $userinfo['id_user']){
