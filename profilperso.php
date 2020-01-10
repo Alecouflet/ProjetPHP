@@ -2,12 +2,11 @@
 <html>
 
 <head>
-    <title>Mon profil - TinderPHP</title>
+    <title>Mon profil - SkoolMeat</title>
     <link rel="stylesheet" href="profileperso.css" />
     <nav>
-	    <a href="index.php">Accueil</a>
-        <a href="seconnecter.php">Connexion</a>
-        <a href="signin.php">Inscription</a>
+	    <a href="swipe.php">Accueil</a>
+        <a href="profilperso.php">Mon profil</a>
         <a href="disconnect.php">Deconnexion</a>
 	    <div class="animation start-home"></div>
     </nav>
@@ -35,8 +34,11 @@
         <input class="button" type="submit" name="submit" value="Editer ma bio">
     </form>
     </div>
-    <?php $modify = $bdd->prepare("UPDATE `user` SET `bio` = ? WHERE `user`.`id_user` = ?");
-    $modify->execute(array($_POST['bio'],$userinfo['id_user']));?>
+    <?php 
+    if(isset($_POST['bio'])){
+    $modify = $bdd->prepare("UPDATE `user` SET `bio` = ? WHERE `user`.`id_user` = ?");
+    $modify->execute(array($_POST['bio'],$userinfo['id_user']));
+    }?>
     <form method="post" action="swipe.php">
         <input class="button" type="submit" value="Meat !">
     </form>

@@ -5,10 +5,9 @@
     <title>Socialiser - SkoolMeat</title>
     <link rel="stylesheet" href="swipe.css" />
     <nav>
-	    <a href="index.php">Accueil</a>
-        <a href="seconnecter.php">Connexion</a>
-        <a href="signin.php">Inscription</a>
-        <a href="profilperso.php">Profil</a>
+    <a href="swipe.php">Accueil</a>
+        <a href="profilperso.php">Mon profil</a>
+        <a href="disconnect.php">Deconnexion</a>
 	    <div class="animation start-home"></div>
     </nav>
 </head>
