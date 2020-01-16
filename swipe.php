@@ -25,11 +25,13 @@
     ?>
     <h2> Meat other pupils : </h2><br> 
     <?php
-    
-    if(isset($_SESSION['idstranger']) && $_SESSION['idstranger'] == 0 && $userinfo['id_user'] != 1){
+    if(!isset($_SESSION['idstranger']) && $userinfo['id_user'] != 1){
         $_SESSION['idstranger'] = 1;
     }
-    else if($_SESSION['idstranger'] == $userinfo['id_user']){
+    else if(!isset($_SESSION['idstranger']) && $userinfo['id_user'] == 1){
+        ?><meta http-equiv="refresh" content="0;URL=nextprofile.php"><?php
+    }
+    else if(isset($_SESSION['idstranger']) && $_SESSION['idstranger'] == $userinfo['id_user']){
         $_SESSION['idstranger'] += 1;
     }
     $idpresent = $_SESSION['idstranger'];
